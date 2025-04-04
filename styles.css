@@ -23,7 +23,6 @@ a {
 	color: #26875d;
 	font-size: 1.5rem;
 	font-family: "aptly";
-
 }
 
 .lien-button {
@@ -40,7 +39,7 @@ a:hover {
 header {
 	position: relative;
 	padding: 0 2rem;
-	background-color: #d8f4e8; 
+	background-color: #F8E27C; 
 }
 
 .navbar {
@@ -149,7 +148,7 @@ header {
 	font-size: 35px;
 	font-family: "aptly";
 	color: #26875d;
-	background-color: #d8f4e8;
+	background-color: #F8E27C;
 	border-radius: 15px;
 }
 
@@ -239,7 +238,7 @@ header {
 	max-width: none;
 	width: 50%;
 	z-index: 1;
-	background-color:rgba(231, 141, 48, 1);
+	background-color: #c2dbd0; 
 	backdrop-filter: blur(15px);
 	overflow: hidden;
 	border-radius: 10px;
