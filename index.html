@@ -3,19 +3,35 @@
 <head>
 	<title>La Ferme du Doiterneau</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="banner">
-		<img src="asset/vert/asset-logo1-1.png" alt="logo la ferme du doiterneau" class="logo">
-		<nav class="menu">
-		<ul>
-		<li><a href="#QUI">QUI SOMMES-NOUS ?<a/></li>
-		<li><a href="#VENTE">VENTE DIRECTE</a></li>
-		<li><a href="#CONTACT">CONTACT</a></li>
+	<header>
+		<div class="navbar">
+		<div>
+			<a href="index.html">
+			<img src="asset/VERT/asset-logo1-1.png" alt="logo la ferme du doiterneau" class="logonavbar">
+			</a>
+		</div>
+		<ul class="links">
+			<li><a href="#QUI">QUI SOMMES NOUS?</a></li>
+			<li><a href="#VENTE">VENTE DIRECTE</a></li>
+			<li><a href="#CONTACT">CONTACT</a></li>
 		</ul>
-		</nav>
-	</div>
+		<div class="burger-menu-button">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+		</div>
+		<div class="burger-menu">
+			<ul class="links">
+				<li><a href="#QUI">QUI SOMMES NOUS?</a></li>
+				<li><a href="#VENTE">VENTE DIRECTE</a></li>
+				<li><a href="#CONTACT">CONTACT</a></li>
+			</ul>
+		</div>
+	</header>
 	<div class="photo">
 		<div id="slider">
 		<div class="images">
@@ -25,7 +41,10 @@
 			<img src="slider/pic4.jpg">
 		</div>
 		</div>				 
-		<p class="texte">Prochaines ventes :<br> 5 juillet, 11 aout, 13 septembre<br><button class="btn">Commandez votre colis</button></p>
+		<p class="texte">Prochaines ventes :<br> 5 juillet, 11 aout, 13 septembre
+			<br>
+			<button class="btn"><a href="#VENTE" class="lien-button">Commandez votre colis</a></button>
+		</p>
 	</div>
 	<h1 class="h1" id="QUI">QUI SOMMES-NOUS ?</h1>
 	<p class="p">La Ferme du Doiterneau est une ferme située à Pornic, dans le Pays de Retz, en Loire-Atlantique...</p>
@@ -42,7 +61,7 @@
 	<p class="p">détail</p>
 	<h2 class="h2">MOUTON</h2>
 	<p class="p">détail</p>
-	<button class="btn2">Commandez votre colis</button>
+	<button class="btn2"><a href="index.html" class="lien-button">Commandez votre colis</a></button>
 	<h1 class="h1" id="CONTACT">CONTACT</h1>
 	<p class="p">adresse mail<br>numéro de téléphones<br><br>Le Doiterneau<br>44210 PORNIC</p>
 	<div class="feuilles">
@@ -51,8 +70,21 @@
 		<img src="asset/VERT/asset-feuille-4.png" alt="feuille"class="logofeuilles">
 	</div>
 <footer class="footer">
-	<img src="asset/VERT/asset-logo3-1.png" alt="logo la ferme du doiterneau" class="logofooter">
+	<img src="asset/BLANC/asset-logo3-1.png" alt="logo la ferme du doiterneau" class="logofooter">
 	<p class="pfooter">Le Doiterneau<br>44210 Pornic</p>
 </footer>
+<script>
+	const burgerMenuButton = document.querySelector(".burger-menu-button")
+	const burgerMenuButtonIcon = document.querySelector(".burger-menu-button i")
+	const burgerMenu = document.querySelector(".burger-menu")
+
+	burgerMenuButton.onclick = function() {
+		burgerMenu.classList.toggle("open")
+		const isOpen = burgerMenu.classList.contains("open")
+		burgerMenuButtonIcon = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"
+	}
+
+
+</script>
 </body>
 </html>
