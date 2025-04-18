@@ -248,7 +248,7 @@ header {
 	max-width: none;
 	width: 50%;
 	z-index: 1;
-	background-color: #e1d196; 
+	background-color: #26875d; 
 	backdrop-filter: blur(15px);
 	overflow: hidden;
 	border-radius: 10px;
@@ -309,4 +309,10 @@ header {
 
 }
 
+.burger-menu a {
+	color: white;
+}
 
+.burger-menu a:hover {
+	color: #F8E27C;
+}
