@@ -13,6 +13,7 @@ html, body {
 	padding: 0;
 	margin: 0;
 	padding-top: 65px;
+	background-color: #fae9a7
 }
 
 li {
@@ -40,7 +41,6 @@ a:hover {
 header {
 	position: relative;
 	padding: 0 2rem;
-	background-color: #F8E27C;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -207,8 +207,8 @@ header {
 	margin: 0;
 	width: 100;
 	padding: 10px;
-	font-size: 20px;
-	font-family: "aptly";
+	font-size: 18px;
+	font-family: "arial";
 	color: black;
 
 }
