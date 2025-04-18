@@ -49,6 +49,7 @@ header {
 	z-index: 1;
 	margin-bottom: 15px;	
 	background-color: #faebaf;
+	border-bottom: dashed #26875d;
 }
 
 .navbar {
