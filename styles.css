@@ -147,6 +147,20 @@ header {
 	color: #F8E27C;
 }
 
+
+.colis {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+}
+
+.presentation {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	margin: 0 20px;
+}
+
 .h1 {
 	text-align: center;
 	margin-top: 30px;
